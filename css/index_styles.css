@@ -18,7 +18,7 @@ body {
     font-family: "Console", "Lucida Console", "Courier New", monospace;
     grid-template-columns: 1fr;
     background-color: #1d1d21;
-    color: #5d8d5d;
+    color: lightslategrey;
     flex: 1;
 }
 

@@ -1,94 +1,114 @@
 /* Main Styles */
 
 body {
-    margin: 0px;
-    background-color: #1d1d21;
+  margin: 0px;
+  background-color: #1d1d21;
     
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    background-color: #1d1d21;
-    color: azure;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #1d1d21;
+  color: azure;
 }
 
 .about-container {
-    display: grid;
-    font-family: "Console", "Lucida Console", "Courier New", monospace;
-    grid-template-columns: 1fr;
-    background-color: #1d1d21;
-    color: #5d8d5d;
-    flex: 1;
+  display: grid;
+  font-family: "Console", "Lucida Console", "Courier New", monospace;
+  grid-template-columns: 1fr;
+  background-color: #1d1d21;
+  color: #fffdd0;
+  flex: 1;
 }
 
 
 /* Nav Bar Styles */
 
 .nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 36px;
-    font-family: "Console", "Lucida Console", "Courier New", monospace;
-    font-size: 1rem;
-    font-weight: lighter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 36px;
+  font-family: "Console", "Lucida Console", "Courier New", monospace;
+  font-size: 1rem;
+  font-weight: lighter;
 }
 
 .center {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .nav > .center > div {
-    margin-right: 10px;
-    font-size: 0.9em;
-    text-transform: uppercase;
+  margin-right: 10px;
+  font-size: 0.9em;
+  text-transform: uppercase;
 }
 
 .name {
-    color: #8a8a8a;
+  color: #8a8a8a;
 }
 
 .nav-link {
-    height: 19px;
-    border-top: 1px solid transparent;
-    transition: border-top 0.5s;
+  height: 19px;
+  border-top: 1px solid transparent;
+  transition: border-top 0.5s;
 }
 
 .nav-link a {
-    color: #007367;
-    text-decoration: none;
-    transition: color 0.5s;
+  color: #007367;
+  text-decoration: none;
+  transition: color 0.5s;
 }
 
 .nav-link a:hover {
-    color: #00c4b4;
+  color: #00c4b4;
 
 }
 
-/* About Styles */
+/* Blog Styles */
 
-.about-content {
-    display: flex;
-    justify-content: center;
-    padding: 16px;
-    margin: 5px;
-    font-weight: light;
+.main-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
 }
 
-.left-box {
-    color: lightslategrey;
-    padding: 16px;
-    height: 500px;
-    width: 120px;
+.main-container .blog-post-list {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 200px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 16px;
 }
 
-.right-box div {
-    display: flex;
-    flex-direction: column;
-    padding: 16px;
-    height: 20px;
-    width: 700px;
+.main-container .blog-container {
+  display: flex;
+  flex-direction: column;
 }
+
+.blog-container .blog-title {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  margin: 5px;
+  height: 25px;
+  font-weight: light;
+  color: #fffdd0;
+}
+
+.blog-container .blog-content {
+  display: flex;
+  justify-content: center;
+  color: lightslategrey;
+  padding: 16px;
+  height: 500px;
+  width: 120px;
+}
+
+
+
 
